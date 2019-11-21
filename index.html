@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    
+        <style>
+        .form{
+         background-color: red;
+        width: 40%;
+         text-align: center;
+        position: absolute;
+    left:30%;
+top: 30%;
+height: 300px;
+}
+.fr{
+  margin-top: 100px;
+   }
+    </style>
+     </head>
+     <body> 
+         <div class="form">
+          <h1>Longueur d'un mot </h1>
+          <div class="fr">
+           entrer le nom: <input type="text" id="txt1"><br><br>
+           <input type="button" onclick="count()" value="Calculer"><br>
+            <label id="result">...</label>
+          </div>
+           </div>
+
+           <script>
+        function count(){
+            var txt2=document.getElementById('txt1').value;     
+            document.getElementById('result').innerHTML=txt2.length;
+             
+            }
+        </script>
+            </body> 
+            </html>
